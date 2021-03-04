@@ -1,5 +1,6 @@
 # Retail Demo - Instore Analytics
 Video overview and demonstration:
+
 [![Retail Demo](https://img.youtube.com/vi/m3Pc300x2Mw/0.jpg)](https://www.youtube.com/watch?v=m3Pc300x2Mw)
 
 ## Overview
@@ -38,13 +39,13 @@ Git will be used to copy all the files for the demo to your local computer.
 1. Install Git LFS from [here](https://help.github.com/en/github/managing-large-files/installing-git-large-file-storage)
     > IMPORTANT: Ensure you have Git LFS installed before cloning the repo or large files will be corrupt. If you find you have corrput files, you can run `git lfs pull` to download files in LFS.
 1. Open a command prompt and navigate to a folder where the repo should be downloaded<br>
-1. Issue the command `git clone https://github.com/Teodelas/RetailDemo.git`.
+1. Issue the command `git clone https://github.com/Azure-Samples/IoTDemos.git``.
 
 ## Azure Resource Deployment
 
 An Azure Resource Manager (ARM) template will be used to deploy all the required resources in the solution.  Click on the link below to start the deployment. Note that you may need to register Azure Resource Providers in order for the deployment to complete successfully.  If you get an error that a Resource Provider is not registered, you can register the Resource Provider by following the steps in this [link](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types)
 
-[![homepage](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fzarmada.blob.core.windows.net%2Farm-deployments-public%2Farm-template-rote.json "Deploy template")
+[![homepage](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2FIoTDemos%2Fmaster%2FRetailDemo%2Fdeployment%2Farm-template-rote.json "Deploy template")
 
 
 ### Deployment of resources
@@ -189,7 +190,7 @@ Here we will setup an event subscription for the Azure Maps account in order to 
 
 In this section we will use the IndoorMapSetup console app to use Creator to create an indoor map.
 
-> NOTE: The portable executable provided is targeted for Windows 64-bit environments. If the .exe file below does not run on your PC, consider creating a VM and running the exe there.  The steps to create a VM are outside the scope of this document.
+> NOTE: The portable executable provided is targeted for Windows 64-bit environments and .net 5.0. If the .exe file below does not run on your PC, consider creating a VM and running the exe there.  The steps to create a VM are outside the scope of this document.
 
 If you would like to do this manually, you can follow the tutorial here: [Create Indoor Map](https://docs.microsoft.com/en-us/azure/azure-maps/tutorial-creator-indoor-maps).
 
@@ -613,6 +614,7 @@ At this point in the demo, we can show that customer demand is diminishing stock
 
 1. Triggering the **Low Stock Alert**:
     * Default Behavior: An IoT Edge module property update occurs after the customer makes the order to set the video on the module to show Low Stock.
+     - Browsing the IoT Edge endpoint on port 5012 will show the current stream being analyzed in a web browser. ex: http://192.168.1.1:5012
     * RTSP Stream: You should make sure there are less than 4 cans in the cameras vision to trigger the alert.
 1. Go to **Microsoft Teams** and observe the **Low Stock Alert** from the device in the **Front Line Workers** channel.
 1. OPTIONAL: If you want to restock the shelves you can do the following (note this will also happen when you reset the demo):

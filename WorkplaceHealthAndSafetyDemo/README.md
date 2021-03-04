@@ -1,6 +1,6 @@
 # Workplace Health and Safety Demo
 
-[![Workplace Safety Demonstration](https://img.youtube.com/vi/pL-c00M2CnI/0.jpg)](https://www.youtube.com/watch?v=pL-c00M2CnI)
+[![Workplace Safety Demonstration](https://img.youtube.com/vi/wI3hP1gPYKw/0.jpg)](https://www.youtube.com/watch?v=wI3hP1gPYKw)
 
 ## Overview
 The Workplace Health and Safety Demo provides the ability to identify unsafe work conditions using AI on Edge and Location Analytics IoT architecture patterns.
@@ -13,7 +13,7 @@ The Location Analytics pattern is implemented through Azure Maps geofencing capa
 After deploying the demo, a sample demonstration script can be found [here](https://github.com/Azure-Samples/IoTDemos/blob/master/WorkplaceHealthAndSafetyDemo/Workplace%20Safety%20-%20Demo%20Script.pdf)
 
 ## Architecture
-![Architecture](https://github.com/Azure-Samples/IoTDemos/blob/master/WorkplaceHealthAndSafetyDemo/images/workplace-saftey-arch.png)
+![Architecture](https://github.com/Azure-Samples/IoTDemos/blob/master/WorkplaceHealthAndSafetyDemo/images/workplace-safety-arch.png)
 
 ## Troubleshooting
 Troubleshooting information at the [end](https://github.com/Azure-Samples/IoTDemos/blob/master/WorkplaceHealthAndSafetyDemo/README.md#troubleshooting-1) of this document.
